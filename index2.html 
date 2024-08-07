@@ -1,1 +1,1219 @@
-a
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gartem of Books</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C2C2C2;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00308a;
+    padding: 6px 40px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.products-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product button {
+    background-color: #00308a;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #575757;
+}
+
+@media screen and (max-widht: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container_image {
+        width: 50vw;
+    }
+
+        .container_caixa {
+            margin: 2em 2em;
+        }
+.responsive-image {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+        .secundario {
+            margin: 0;
+            text-align: center;
+        }
+
+        .secundario_image {
+            width: 50vw;
+        }
+
+        .dispositivos_lista {
+            display: block;
+        }
+
+        .rodape_lista {
+            display: block;
+        }
+
+}   
+
+footer {
+    background-color: #00308a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <font size="30"><font color="#FFFFFF"><h1><p>ALURA BOOKS</p></h1></font></font>
+
+    </header>
+
+
+    <header>
+            <a class="nav-link" href="index3.html">⚙</a>
+            <a class="nav-link" href="index4.html">🔎</a>
+            <a class="nav-link" href="index5.html">💬</a>
+            <a class="nav-link" href="index6.html">❕</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="container">
+            <h1>Bem-vindo à Livraria Online</h1>
+            <p>Descubra uma vasta coleção de livros ao seu alcance de forma acessível e grátis.</p>
+            <p>OBS: Esse e um site mobile pode ser que ele tenha muitos bugs no computador.</p>
+        </div>
+    </div>
+<div class="container">
+        <h2 id="books">Livros em Destaque</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71ml1z8o83L._AC_UF1000,1000_QL80_FMwebp_.jpg" alt="" width="111">
+                <h3>Arrabalde: Em busca da</h3>
+                <h3>Amazônia</h3>
+                <p>Autor: João Moreira Salles</p>
+                <a href="2022_salles_arrabalde_busca_amazonia.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61+gYOoYymL._AC_UF350,350_QL50_.jpg" alt="" width="111">
+                <h3>A Vida Secreta das</h3>
+                <h3>Árvores</h3>
+                <p>Autor: Peter Wohlleben</p>
+                <a href="A-Vida-Secreta-Das-Árvores-Peter-Wohlleben.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81X706V7XsL._AC_UF1000,1000_QL80_FMwebp_.jpg" alt="" width="122">
+                <h3>A Origem das Espécies</h3>
+                <p>Autor: Charles Darwin</p>
+                <a href="2009_OriginPortuguese_F2062.7.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://static.wixstatic.com/media/ab529c_74f77b9f6ba9471cabcf1b364333dc22~mv2.jpg/v1/fill/w_480,h_672,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ab529c_74f77b9f6ba9471cabcf1b364333dc22~mv2.jpg" alt="" width="111">
+                <h3>ABC do Meio Ambiente</h3>
+                <p>Autor: Ibama</p>
+                <a href="abcdomeioambienteardigital.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/511lbuSraCL._SY445_SX342_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="Antonio Bispo dos Santos - A terra dá, a terra quer-Ubu Editora (2023).pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81hD19i1skL._AC_UY218_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="banzeiro-okoto-uma-viagem-a-amazonia-centro-do-mundo2.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71mOMNIsIUL._AC_UY218_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="Capitalismo e Colapso Ambiental - Luiz Marques caps. 1 e 10.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/A1RubwxdJrL._AC_UY218_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="eBook-Meio-Ambiente-e-Sustentabilidade-Vol-1.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71BnFkpryFL._AC_UY218_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="ideias-para-adiar-o-fim-do-mundo-1-34.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/7167CIQEP3L._AC_UY218_.jpg" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="KRENAK, A. Futuro Ancentral Capítulo cidades, pandemias e outras geringonças. São Paulo Companhia das Letras, 2022, pp.45-72..pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="Livro_Educacao Ambiental na Escola.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="MAF1.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="" alt="" width="111">
+                <h3></h3>
+                <p>Autor: </p>
+                <a href="Meio Ambiente & Sociedade.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+
+     <div class="container">
+        <h2 id="books">Livros Economia</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Livros de Botânica</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Revistas Ecológicas</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Autodesenvolvimento</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Artigos Sobre o Desmatamento</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Livros de Biologia</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Livros Didáticos</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <h2 id="books">Artigos Sobre a Amazônia</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+            <div class="product">
+                <img src="https://img.elo7.com.br/product/zoom/3FE757D/lancamento-em-breve.jpg" alt="Livro 1" width="200">
+                <h3>??????</h3>
+                <p>Autor: ??????</p>
+                <a href="caminho/para/seu-arquivo.pdf" target="_blank">
+        <button>Ler</button>
+    </a>
+                <button onclick="alert('Marcado como Lido!')">Adicionar a Leitura</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2024 Gartem of Books</footer>
+..................................................................................
+    <script>
+       document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});    
+    </script>
+</body>
+</html>
